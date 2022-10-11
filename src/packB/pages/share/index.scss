@@ -1,0 +1,34 @@
+page {
+  background-color: #eee;
+}
+$color: #FFB085;
+.share-btn {
+  margin-top: 100rpx;
+  width: 300rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  background: $color;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx !important;
+  font-weight: bold;
+}
+.go-index-btn{
+  margin-top: 10rpx;
+  width: 300rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  background: #c1b9b5;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx !important;
+  font-weight: bold;
+}
+.share-people{
+  text-align: center;
+  margin: 50rpx 0;
+  font-size: 40rpx !important;
+  font-weight: bold;
+}

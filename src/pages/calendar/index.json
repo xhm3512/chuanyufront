@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "calendar": "@/components/calendarnew/calendar"
+    },
+    "navigationBarTitleText": "功能演示"
+}

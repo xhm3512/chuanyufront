@@ -1,0 +1,38 @@
+
+.user-list-item {
+  background: #fff;
+  padding: 50rpx 0;
+  width: 100%;
+  .avatar {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-right: 10rpx;
+  }
+  .user-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10rpx;
+  }
+  .edit-img {
+    width: 40rpx;
+    height: 40rpx;
+  }
+}
+.my-list-item {
+  height: 100rpx;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0 20rpx;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+  
+  .more-img {
+    width: 40rpx;
+    height: 50rpx;
+  }
+  .verify-text{
+    font-size: 26rpx;
+    color: rgb(190, 187, 187);
+  }
+}

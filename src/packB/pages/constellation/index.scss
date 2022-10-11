@@ -1,0 +1,15 @@
+page {
+  background-color: #eee;
+}
+.constellation-box{
+  padding: 20rpx;
+  .title{
+    text-align: center;
+    font-size: 30rpx;
+    font-weight: bold;
+    margin-bottom: 30rpx;
+  }
+  .content{
+    line-height: 50rpx;
+  }
+}
