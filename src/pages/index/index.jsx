@@ -18,6 +18,7 @@ export default () => {
 
 
   return <View className='index-swiper-box'>
+    <View className='my-titile'>川渝阿姨保洁</View>
     <Swiper />
     <List />
   </View>

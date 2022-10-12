@@ -1,0 +1,11 @@
+.appointment-box{
+  .tabbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .content{
+    height: 2000rpx;
+    margin-top: 80rpx;
+  }
+}

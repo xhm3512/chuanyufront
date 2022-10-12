@@ -1,11 +1,18 @@
 page {
-  background-color: #eee;
+  background-color: #F6F7F8;
 }
 $color: #FFB085;
 .index-swiper-box{
+  background-image: linear-gradient( rgba(200, 216, 237, 0.5),#F6F7F8);
   width: 100%;
   padding:  20rpx;
   box-sizing: border-box;
+  .my-titile{
+    color: rgb(61, 115, 232);
+    font-size: 34rpx;
+    font-weight: 800;
+    margin: 20rpx;
+  }
 }
 
 

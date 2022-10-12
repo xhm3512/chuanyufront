@@ -1,10 +1,32 @@
 import { Swiper, SwiperItem, Image } from '@tarojs/components';
-import { surl } from '../../../constants';
+import { navigateTo } from '@tarojs/taro';
+import { surl } from '@/constants';
 import './index.scss'
 
+const arr = [
+  {
+    id: 1,
+    picUrl: surl,
+    link:`/packA/pages/itemDetail/index?id=1`
+  },
+  {
+    id: 2,
+    picUrl: surl,
+    link:`/packA/pages/itemDetail/index?id=2`
+  },
+  {
+    id: 3,
+    picUrl: surl,
+    link:`/packA/pages/itemDetail/index?id=3`
+  },
+]
 export default () => {
 
-
+  const onClick = (url) => {
+    navigateTo({
+      url
+    })
+}
 
 
   return <Swiper
@@ -14,15 +36,8 @@ export default () => {
     circular
     indicatorDots
   >
-    <SwiperItem>
-      <Image className='img' src={surl} />
-    </SwiperItem>
-    <SwiperItem>
-      <Image className='img' src={surl} />
-
-    </SwiperItem>
-    <SwiperItem>
-      <Image className='img' src={surl} />
-    </SwiperItem>
+    {arr.map(item=><SwiperItem key={item.id} onClick={()=>onClick(item.link)}>
+      <Image className='img' src={item.picUrl} />
+    </SwiperItem>)}
   </Swiper>
 }

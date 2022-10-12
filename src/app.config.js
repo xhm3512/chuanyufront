@@ -1,9 +1,8 @@
 export default {
   pages: [
-    // 'pages/constellation/index',
     'pages/index/index',
-    'pages/calendar/index',
     'pages/my/index',
+    'pages/welfare/index',
   ],
   "lazyCodeLoading": "requiredComponents",
 
@@ -11,19 +10,12 @@ export default {
     {
       root: 'packA',
       pages: [
-        'pages/addEvent/index',
-        'pages/userEdit/index',
-        'pages/taskDetailList/index',
+        'pages/itemDetail/index',
+        'pages/appointment/index',
+        'pages/appointmentDetail/index',
+
       ]
     },
-    {
-      root: 'packB',
-      pages: [ 
-        'pages/share/index',
-        'pages/verify/index',
-        'pages/constellation/index',
-      ]
-    }
   ],
   // window: {
   //   backgroundTextStyle: 'light',
@@ -48,7 +40,7 @@ export default {
         'selectedIconPath': './images/home1.jpg'
       },
       {
-        'pagePath': 'pages/calendar/index',
+        'pagePath': 'pages/welfare/index',
         'text': '限时福利',
         'iconPath': './images/calendar.jpg',
         'selectedIconPath': './images/calendar1.jpg'

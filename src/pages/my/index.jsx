@@ -1,8 +1,9 @@
-
+import { useEffect, useState } from "react";
 import { View, Image, Button } from '@tarojs/components'
 import { useSelector } from 'react-redux';
 import { navigateTo, useShareAppMessage } from '@tarojs/taro';
 import svgs from '@/constants/svg'
+import { surl } from '@/constants';
 import { pageIndexShare } from '@/constants/share'
 import './index.scss'
 
@@ -21,61 +22,43 @@ export default () => {
   })
   const onUserEditClick = () => {
     navigateTo({
-      url: '/packA/pages/userEdit/index',
+      url: '/packA/pages/appointment/index',
     });
   }
-  const onEmailVerifyClick = () => {
-    // navigateTo({
-    //   url: '/packB/pages/verify/index',
-    // });
-  }
+ 
+  useEffect(() => {
+    wx.login({
+      success(res) {
+        console.log(2222, res);
 
-  return <View>
-    <View className='user-list-item flex-justify-center'>
+      }
+    })
+  }, [])
+  return <View className='my-box'>
+    <View className='user-list-item flex-justify-row'>
       <View className='user-item'>
-        <Image className='avatar' src={avatarUrl} />
-
+        <Image className='avatar' src={surl} /> 瓶子里的时光
       </View>
-      <View className='user-item'>
-        <Image className='edit-img' src={svgs.edit} onClick={onUserEditClick} />
-      </View>
+      <View>设置</View>
     </View>
+    
     <View className='my-list-item flex-justify-row' onClick={onUserEditClick}>
-      <View className='flex-item demo-text-1'>个人信息</View>
+      <View className='flex-item demo-text-1'>我的预约</View>
       <View className='flex-item demo-text-1'>
         <Image className='more-img' src={svgs.moreUrl} />
       </View>
     </View>
-    <View className='my-list-item flex-justify-row' onClick={onEmailVerifyClick}>
-      <View className='flex-item demo-text-1'>纪念日提醒</View>
-      <View className='flex-item demo-text-1 flex-justify-row'>
-        <View className='verify-text'>
-          {
-            userInfoData?.emailVerify ?
-              '已开通，早上09:00提醒 ' : '暂未开通'
-          }
-        </View>
-        {/* &nbsp;<Image className='more-img' src={svgs.moreUrl} /> */}
-      </View>
-    </View>
-    <Button className='my-list-item flex-justify-row button-none' openType='share' id='1'>
-      <View className='flex-item demo-text-1'>推荐给朋友</View>
-      <View className='flex-item demo-text-1'>
-        <Image className='more-img' src={svgs.moreUrl} />
-      </View>
-    </Button>
     <button className='my-list-item flex-justify-row button-none' open-type='contact'>
       <View className='flex-item demo-text-1'>联系客服</View>
       <View className='flex-item demo-text-1'>
         <Image className='more-img' src={svgs.moreUrl} />
       </View>
     </button>
-    <View className='my-list-item flex-justify-row'>
-      <View className='flex-item demo-text-1'>当前版本</View>
+    <Button className='my-list-item flex-justify-row button-none' openType='share' id='1'>
+      <View className='flex-item demo-text-1'>推荐给朋友</View>
       <View className='flex-item demo-text-1'>
-        v1.0.0
+        <Image className='more-img' src={svgs.moreUrl} />
       </View>
-    </View>
-
+    </Button>
   </View>
 }

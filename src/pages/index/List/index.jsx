@@ -9,11 +9,13 @@ const arr = [
     title: '4小时日常保洁',
     picUrl: surl,
     describe: 'ww',
+    price:238
   },
   {
     id: 2,
     title: '4小时深度保洁',
     picUrl: surl,
+    price:358,
     describe: '适用范围：出租屋回收、长期闲置房入住、搬家入住等',
   },
 ]

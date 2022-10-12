@@ -1,7 +1,26 @@
 .item-list-box{
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  border-radius: 4rpx;
+  box-shadow: 0px 2px 8px 0px rgba(204,204,204,0.1);
   .img{
     width: 180rpx;
     height: 180rpx;
     border-radius: 4rpx;
+  }
+  .right{
+    margin-left: 10rpx;
+  }
+  .title{
+    font-size: 32rpx;
+  }
+  
+  .describe{
+    color: #999;
+    font-size: 24rpx;
+  }
+  .button{
+    width: 200rpx;
   }
 }

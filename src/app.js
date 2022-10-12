@@ -1,6 +1,7 @@
 import { Provider } from 'react-redux';
 // import 'taro-ui/dist/style/index.scss'
-import 'taro-ui/dist/style/components/button.scss'
+// import 'taro-ui/dist/style/components/button.scss'
+import 'taro-ui/dist/style/index.scss'
 import configStore from './store';
 import './app.scss'
  
