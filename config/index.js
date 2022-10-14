@@ -71,6 +71,7 @@ const config = {
     '@/pages': resolve(__dirname, '..', 'src/pages'),
     '@/service': resolve(__dirname, '..', 'src/service'),
     '@/images': resolve(__dirname, '..', 'src/images'),
+    '@/libs': resolve(__dirname, '..', 'src/libs'),
   },
   framework: 'react',
   mini: {

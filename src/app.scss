@@ -44,6 +44,12 @@ page{
   flex-direction:row;
   align-items: center;
 }
+.flex-justify-row-left-wrap{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .flex-justify-center{
   display: flex;
   flex-wrap: wrap;

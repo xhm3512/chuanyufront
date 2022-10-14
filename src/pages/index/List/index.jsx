@@ -1,5 +1,5 @@
 import { View } from '@tarojs/components';
-import { surl } from '../../../constants';
+import { surl } from '@/constants';
 import ListItem from './listItem'
 import './index.scss'
 

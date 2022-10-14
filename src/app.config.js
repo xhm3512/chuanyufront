@@ -1,8 +1,13 @@
 export default {
   pages: [
+    'pages/addAddress/index',
+
     'pages/index/index',
-    'pages/my/index',
+
     'pages/welfare/index',
+    'pages/my/index',
+    'pages/location/index',
+
   ],
   "lazyCodeLoading": "requiredComponents",
 
@@ -56,6 +61,12 @@ export default {
   "permission":{
     "scope.userLocation":{
       "desc": "获取地理位置信息的用途描述"
-    }
-  }
+    },
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "onLocationChange",
+    "startLocationUpdateBackground",
+    "chooseAddress"
+ ]
 }

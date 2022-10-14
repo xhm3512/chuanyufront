@@ -41,6 +41,7 @@
     "@tarojs/react": "3.4.3",
     "@tarojs/runtime": "3.4.3",
     "@tarojs/taro": "3.4.3",
+    "classnames": "^2.3.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-redux": "^7.2.6",
@@ -48,6 +49,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
     "taro-plugin-canvas": "^1.0.10",
+    "taro-swiper-week": "0.0.1-beta.19",
     "taro-ui": "^3.0.0-alpha.10"
   },
   "devDependencies": {

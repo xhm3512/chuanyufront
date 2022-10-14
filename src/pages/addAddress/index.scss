@@ -1,0 +1,38 @@
+.add-address-box {
+  .week-swiper {
+    padding: 0 10rpx;
+  }
+  .time {
+    padding: 0 20rpx;
+  }
+  .text {
+    border: 1px solid transparent;
+    background: rgb(235, 232, 232);
+    padding: 10rpx 0;
+    margin-bottom: 10rpx;
+    width: 160rpx;
+    height: 44rpx;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 4rpx;
+    &:not(:nth-child(4n)) {
+      margin-right: 10rpx;
+    }
+    &:hovet {
+      border-color: aquamarine;
+    }
+  }
+  .time-active {
+    border: 1px solid red;
+    color: red;
+  }
+
+}
+.bottom-fix{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border-top: 1px solid rgb(201, 196, 196);
+}

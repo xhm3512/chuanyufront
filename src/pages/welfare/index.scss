@@ -1,0 +1,38 @@
+page {
+  background: rgb(242, 119, 42);
+}
+.welfare-box {
+  .title {
+    font-size: 60rpx;
+    font-weight: 800;
+    color: #fff;
+    margin: 40rpx 0 20rpx 0;
+  }
+  .content {
+    flex-wrap: wrap;
+    margin: 0 20rpx;
+    border-radius: 8rpx;
+    background: rgb(238, 196, 9);
+    padding: 20rpx;
+  }
+  .item {
+    width: 325rpx;
+    border-radius: 6rpx;
+    margin-bottom: 20rpx;
+    border: 1px solid #fff;
+    // &:nth-child(2n) {
+    //   margin-left: 20rpx;
+    // }
+    .img {
+      width: 100%;
+      height: 200rpx;
+    }
+    .price{
+      color: #fff;
+
+    }
+    .detail{
+      margin: 0 10rpx 10rpx 20rpx;
+    }
+  }
+}

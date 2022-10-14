@@ -43,29 +43,20 @@ export const svgTransUrl = (svg) => {
   return 'data:image/svg+xml,' + svg.trim();
 
 }
-
-/**
- * 获取距离指定时间还有多少天
- * @param {String | Number | Date} dateTime 日期时间
- * @example
- * ```javascript
- *     getDistanceSpecifiedTime('2019/02/02 02:02:00');
- *     getDistanceSpecifiedTime(1549036800000);
- *     getDistanceSpecifiedTime(new Date("2019/2/2 00:00:00"));
- * ```
- */
-
-export const getDistanceSpecifiedTime = (year, month, day) => {
-  const dateTime=`${year}/${month}/${day} 00:00:00`
-  // 指定日期和时间
-  var EndTime = new Date(dateTime);
-  // 当前系统时间
-  var NowTime = new Date();
-  var t = EndTime.getTime() - NowTime.getTime();
-  var d = Math.floor(t / 1000 / 60 / 60 / 24);
-  if (d < 0) {
-   return  getDistanceSpecifiedTime(year + 1, month, day)
-  } else {
-    return d
+export const editorinitData = ({year, month, day,dateType=1,showYear=1,showDate}) => {
+  const initYear = year || new Date().getFullYear();
+  const initMonth = month || new Date().getMonth() + 1;
+  const initDay = day || new Date().getDate();
+  return {
+    dateParam: {
+      year: initYear,
+      month: initMonth,
+      day: initDay
+    },
+    dateType,  //1:阳历/公历；2:阴历/农历
+    showYear,//是否展示年和需要年 ，0:不显示，1:显示
+    dateStr: showDate || `${initYear}-${initMonth}-${initDay}`,
   }
 }
+
+

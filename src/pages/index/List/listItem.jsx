@@ -24,7 +24,7 @@ export default ({ itemInfo }) => {
           <AtTag circle size='small' active type='primary' >自营</AtTag>
           {title}</View>
         <View className='describe'>{describe}</View>
-        <View>{price}</View>
+        <View className='price'>{price}</View>
       </View>
       <View>
         <Button className='button' type='primary'>立即预约</Button>
